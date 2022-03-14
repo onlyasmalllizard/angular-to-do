@@ -1,0 +1,36 @@
+@use "../../partials/variables" as var;
+
+section {
+  background: var.$theme-neutral-100;
+
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px var.$theme-neutral-500;
+
+  max-width: 20em;
+  margin: 1em;
+  padding: 1em 2em;
+
+  h2 {
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    list-style-position: outside;
+  }
+
+  button {
+    background: var.$theme-neutral-100;
+    border: none;
+    padding: 0.5em 1em;
+
+    color: var.$theme-900;
+    cursor: pointer;
+
+    transition-duration: 0.4s;
+
+    :hover {
+      background: var.$theme-neutral-500;
+    }
+  }
+}

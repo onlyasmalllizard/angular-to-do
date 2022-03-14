@@ -1,0 +1,8 @@
+<label for="task">What do you need to do?</label>
+<input
+  id="task"
+  type="text"
+  [formControl]="task"
+  placeholder="Enter your task"
+/>
+<button type="button" (click)="submitForm()">Add</button>

@@ -1,0 +1,12 @@
+<section>
+  <h2>{{ isComplete ? "Done" : "To Do" }}</h2>
+  <ul>
+    <ng-container *ngFor="let task of tasks">
+      <li *ngIf="task.complete === isComplete">
+        <button type="button" (click)="updateStatus(task.text)">
+          {{ task.text }}
+        </button>
+      </li>
+    </ng-container>
+  </ul>
+</section>
